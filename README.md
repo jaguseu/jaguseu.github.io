@@ -1,1 +1,2 @@
-# jaguseu.github.io
+# Tomasz Jaguś
+# Front-end Web Developer
