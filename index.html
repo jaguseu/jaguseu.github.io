@@ -56,8 +56,13 @@
                     <img src="img/face.jpg" class="rounded-circle" alt="Cartoon face of webowner">
                 </div>
                 <div class="col-md-4">
-                    <h6 class="text-right text-uppercase">Some Subtitle</h6>
-                    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto similique labore accusantium facilis sed, recusandae rem laborum asperiores vel, inventore minima, ut corporis quas tempora temporibus exercitationem maiores modi fugiat.</p>
+                    <h6 class="text-right text-uppercase">Front-End Web Developer? Grafik?</h6>
+                    <p class="text-justify">
+                        Jestem freelancerem z ponad 4. letnim doświadczeniem w komercyjnym tworzeniu witryn internetowych oraz grafik. Wytrwałość, pewność siebie, efektywność to cechy które mnie definiują. Tworzę nie tylko dla innych ale przedewszystkim dla samego siebie.
+                    </p>
+                    <p class="text-justify">
+                        Jestem samoukiem. Cała moja wiedza wynika z lat tworzenia, próbowania, szukania rozwiązań. Lubię się stawiać przed wyzwaniami, którym z pozoru nie sprostam, gdyż tylko i wyłącznie w ten sposób mogę nauczyć się czegoś nowego.
+                    </p>
                 </div>
             </div>
         </div>
@@ -73,6 +78,22 @@
     <script src=" js/jquery.min.js "></script>
     <script src="js/tether.min.js "></script>
     <script src="js/bootstrap.min.js "></script>
+
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 600, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
